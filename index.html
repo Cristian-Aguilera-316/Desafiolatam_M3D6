@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de CLP</title>
+        <link rel="stylesheet" href="./assets/style/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header-title">Conversor de Monedas Nacional</h1>
+        </header>
+        <main class="main">
+            <section class="mainSection" id="conversion-section">
+                <div class="main-container">
+                    <div id="amount-section">
+                        <div class="mount" id="amount-input-container">
+                            <label for="amount">Ingresa un monto</label>
+                            <input type="number" id="amount-input" class="input" name="amount" placeholder="CLP">
+                        </div>
+                        <div id="show-amount-container">
+                            <h2>$</h2>
+                            <h2 id="show-amount" class="show-amount">0</h2>
+                        </div>
+                    </div>
+                    <div id="currency-section" class="currency-section flex-column">
+                        <div class="selectcurrency">
+                            <label for="currency">Selecciona una moneda</label>
+                            <select name="currency" id="currency" class="currency-select"></select>
+                        </div>
+                        <div id="show-currency-container" class="show-currency-container flex-row">
+                            <h2 id="currency-symbol">$</h2>
+                            <h2 id="show-currency" class="show-currency">0</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="convert-button" class="convert-button">convertir</button>
+                </div>
+            </section>
+            <section id="graphic-section" class="graphic-section flex-column">
+                <div id="graphic-container" class="grafico">
+                    <h3>Variación de la moneda</h3>
+                    <canvas id="graphic"></canvas>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="assets/script/api.js"></script>
+        <script type="module" src="assets/script/conversion.js"></script>
+        <script type="module" src="assets/script/ui.js"></script>
+        <script type="module" src="assets/script/index.js"></script>
+    </body>
+</html>

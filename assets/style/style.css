@@ -1,0 +1,53 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100wv;
+    height: 10vh;
+    
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 60vw;
+    height: 40vh;
+    background-color: gray;
+    color: aliceblue;
+}
+.mount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    gap: 10px;
+}
+.selectcurrency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    gap: 10px;
+}
+.grafico {
+    border: solid  red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 45vh;
+}
