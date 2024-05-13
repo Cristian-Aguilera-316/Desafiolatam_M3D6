@@ -44,7 +44,6 @@
     gap: 10px;
 }
 .grafico {
-    border: solid  red;
     display: flex;
     align-items: center;
     flex-direction: column;
